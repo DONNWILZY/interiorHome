@@ -1,3 +1,8 @@
+:root{
+    --primaryColor: #009688;
+    --white: #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +18,8 @@
 
 }
 ::selection{
-    background: #009688;
-    color: white;
+    background:  var(--primaryColor);
+    color: var(--white);
 }
 .navbar{
     width: 85%;
@@ -28,11 +33,11 @@
 .logo{
     width: 120px;
     cursor: pointer;
-    color: #fff;
+    color: var(--white);
 }
 
 .logo .colstyle{
-  color: #009688;
+  color: var(--primaryColor);
 }
 
 .navbar ul li{
@@ -45,7 +50,7 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: #fff;
+    color:var(--white);
     text-transform: uppercase;
 }
 
@@ -71,7 +76,7 @@
     top: 50%;
     transform: translateY(-50);
     text-align: center;
-    color: #fff;
+    color: var(--white);
 }
 
 .content h2{
@@ -91,16 +96,16 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #009688;
+    border: 2px solid var(--primaryColor);
     background: transparent;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     position: relative;  
     overflow: hidden;
 }
 
 span{
-    background:  #009688;
+    background: var(--primaryColor);
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -108,7 +113,7 @@ span{
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 button:hover span{
@@ -119,7 +124,7 @@ width: 100%;
 button:hover{
     border: none;
     transform: scale(1.1);
-    background: #009688;
+    background: var(--primaryColor);
     transition: 0.3s ease;
     text-transform: uppercase;
     }
